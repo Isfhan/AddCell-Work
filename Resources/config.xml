@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.4/engine/Shopware/Components/Plugin/schema/config.xsd">
+
+    <elements>
+	
+        <element type="boolean" scope="shop">
+            <name>active</name>
+            <label lang="de">Aktiv</label>
+            <label lang="en">Active</label>
+            <value>true</value>
+			<options>
+				<position>1</position>
+			</options>
+        </element>
+		
+		<element required="true" type="text" scope="shop">
+            <name>pid</name>
+            <label lang="de">PID</label>
+            <label lang="en">PID</label>
+            <value></value>
+			<description lang="de">Die PID des Adcell Konto</description>
+			<description lang="en">Die PID des Adcell Konto</description>
+			<options>
+				<position>2</position>
+			</options>
+        </element>
+		
+		<element required="true" type="text" scope="shop">
+            <name>eventid</name>
+            <label lang="de">Event ID</label>
+            <label lang="en">Event ID</label>
+            <value></value>
+			<description lang="de">Die Event ID des Adcell Konto</description>
+			<description lang="en">Die Event ID des Adcell Konto</description>
+			<options>
+				<position>3</position>
+			</options>
+        </element>
+		
+		<element type="boolean" scope="shop">
+            <name>retargeting</name>
+            <label lang="de">Retargeting</label>
+            <label lang="en">Retargeting</label>
+            <value>true</value>
+			<description lang="de">Retargeting aktivieren</description>
+			<description lang="en">Retargeting aktivieren</description>
+			<options>
+				<position>4</position>
+			</options>
+        </element>
+		
+    </elements>
+</config>
