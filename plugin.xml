@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">Adcell</label>
     <label lang="en">Adcell</label>
-    <version>1.2.1</version>
+    <version>1.2.3</version>
     <copyright>Copyright © 2019, Coolbax</copyright>
     <license>proprietary</license>
     <link>http://www.coolbax.de</link>
@@ -13,6 +13,10 @@
 
     <compatibility minVersion="5.3.0" />
 	
+	<changelog version="1.2.3">
+        <changes lang="de">Mehrere Veranstaltung/Bereitstellung hinzugefügt</changes>
+        <changes lang="en">Added multiple event/provision</changes>
+    </changelog>
 	<changelog version="1.2.1">
         <changes lang="de">Retargeting wird jetzt asyncron geladen</changes>
         <changes lang="en">Retargeting is now loaded asyncron</changes>

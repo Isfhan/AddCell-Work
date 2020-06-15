@@ -6,9 +6,16 @@
     <services>
 		
         <service id="cbax_adcell.subscriber.frontend" class="CbaxAdcell\Subscriber\Frontend">
-			<argument>%cbax_adcell.plugin_name%</argument>
-			<argument type="service" id="shopware.plugin.cached_config_reader" />
             <tag name="shopware.event_subscriber" />
+            <argument type="service" id="template" />
+            <argument>%cbax_adcell.plugin_name%</argument>
+            <argument>%cbax_adcell.plugin_dir%</argument>
+            <argument type="service" id="shopware.plugin.cached_config_reader" />
+        </service>
+
+        <service class="CbaxAdcell\Subscriber\ControllerPath" id="cbax_adcell.subscriber.controller_path">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
         </service>
 
         <service id="cbax_adcell.subscriber.theme" class="CbaxAdcell\Subscriber\Theme">
